@@ -1,0 +1,2 @@
+open sanity in chrome:
+https://fizzastuff.sanity.studio/  
