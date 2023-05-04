@@ -5,8 +5,6 @@ import {UilShoppingBag,UilReceipt} from "@iconscout/react-unicons"
 import { useStore } from "../store/store";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import Footer from "./Footer";
-import Menu from "./Menu"
 export default function Header() {
     //state in terminal
     // const state = useStore((state)=>state)
@@ -20,20 +18,20 @@ export default function Header() {
         <div className={css.header}>
             {/* logo side */}
             <div className={css.logo}>
+                <Link href='../'>
                 <Image src={Logo} alt='' width={50} height={50}/>
                 <span>FizzaStuff</span>
-            
+                </Link>
             </div>
             {/* menu side */}
             <ul className={css.menu}>
                 <li><Link href='../'>Home</Link></li>
-                <li><Link href="/pizza">Menu</Link></li>
-                <li ><Link href="/Footer">Contact</Link></li>
+               
 
             </ul>
             {/* cart side */}
             <div className={css.rightSide}>
-                <Link href='/cart'>
+                <Link href='/Cart'>
                 <div className={css.cart}>
                     <UilShoppingBag size={35} color="#2E2E2E"/>
                     <div className={css.badge}>{items}</div>
