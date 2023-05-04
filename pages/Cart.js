@@ -8,7 +8,7 @@ import { useState } from "react";
 import OrderModal from "../components/OrderModal";
 import {useRouter} from "next/router";
 
-export default function cart(){
+export default function Cart(){
   const CartData = useStore((state)=>state.cart);
   const removePizza= useStore((state)=>state.removePizza);
   const [PaymentMethod,setPaymentMethod]=useState(null);
